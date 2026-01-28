@@ -25,22 +25,33 @@
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--accent-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    /* Reduced gap */
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 .headlineWrapper {
-    margin-bottom: 1.5rem;
-    overflow: hidden;
+    margin-bottom: 2rem;
+    min-height: 180px;
+    /* Increased to fit larger 2-line text */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .headline {
-    font-size: clamp(2.5rem, 8vw, 5rem);
     line-height: 1.1;
     color: var(--text-main);
     margin-bottom: 0;
     text-wrap: balance;
+    width: 100%;
+    text-align: center;
+    max-width: 800px;
+    /* Increased width to allow larger font to fit in 2 rows */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -48,13 +59,15 @@
 .subtext {
     font-size: 1.2rem;
     color: var(--text-muted);
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     max-width: 600px;
+    text-align: center;
 }
 
 .cta {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .primaryBtn {
@@ -169,6 +182,12 @@
 }
 
 @media (max-width: 968px) {
+    .headlineWrapper {
+        min-height: 140px;
+        margin-bottom: 1.5rem;
+        justify-content: center;
+    }
+
     .container {
         grid-template-columns: 1fr;
         text-align: center;

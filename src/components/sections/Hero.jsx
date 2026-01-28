@@ -5,6 +5,15 @@ import Magnetic from '../ui/Magnetic';
 import Typewriter from '../ui/Typewriter';
 
 const Hero = ({ profile }) => {
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+
+    const getFontSize = (text) => {
+        const length = text ? text.length : 0;
+        if (length > 30) return 'clamp(2.2rem, 7vw, 3.5rem)'; // Long
+        if (length > 20) return 'clamp(2.6rem, 8vw, 4.2rem)'; // Medium
+        return 'clamp(3rem, 10vw, 5.5rem)';                 // Short
+    };
+
     return (
         <section id="about" className={styles.hero}>
             <div className={styles.container}>
@@ -22,11 +31,20 @@ const Hero = ({ profile }) => {
                     >
                         Hi, I’m {profile.name.split(' ')[0]}
                     </motion.p>
-                    <motion.div layout transition={{ duration: 0.4 }} className={styles.headlineWrapper}>
-                        <h1 className={styles.headline}>
-                            <Typewriter phrases={profile.headline} />
-                        </h1>
-                    </motion.div>
+                    <div className={styles.headlineWrapper}>
+                        <motion.h1
+                            animate={{
+                                fontSize: getFontSize(profile.headline[currentIndex])
+                            }}
+                            transition={{ duration: 0.4 }}
+                            className={styles.headline}
+                        >
+                            <Typewriter
+                                phrases={profile.headline}
+                                onIndexChange={setCurrentIndex}
+                            />
+                        </motion.h1>
+                    </div>
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
