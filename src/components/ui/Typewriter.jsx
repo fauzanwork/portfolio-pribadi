@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Typewriter = ({ phrases, speed = 100, wait = 2000 }) => {
+const Typewriter = ({ phrases, speed = 100, wait = 2000, onIndexChange }) => {
     const [index, setIndex] = useState(0);
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
+
+    useEffect(() => {
+        if (onIndexChange) {
+            onIndexChange(index);
+        }
+    }, [index, onIndexChange]);
 
     useEffect(() => {
         const currentPhrase = phrases[index];
