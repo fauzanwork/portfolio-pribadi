@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: clamp(10px, 2vh, 20px) 0;
     background-color: rgba(249, 249, 249, 0.85);
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -11,17 +11,17 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 5%;
 }
 
 .logo {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
     font-weight: 800;
     color: var(--text-main);
     letter-spacing: -0.04em;
@@ -33,7 +33,7 @@
 
 .navLinks {
     display: flex;
-    gap: 40px;
+    gap: clamp(15px, 3vw, 40px);
     align-items: center;
 }
 
@@ -58,4 +58,10 @@
 .contactBtn:hover {
     opacity: 0.8;
     transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+    .navLinks li:not(:last-child) {
+        display: none;
+    }
 }
