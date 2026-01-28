@@ -10,6 +10,9 @@ const Cursor = () => {
 
     useEffect(() => {
         const handleMouseMove = (e) => {
+            // Disable on touch devices
+            if (window.matchMedia("(pointer: coarse)").matches) return;
+
             mouseX.set(e.clientX - 10);
             mouseY.set(e.clientY - 10);
             if (!isVisible) setIsVisible(true);

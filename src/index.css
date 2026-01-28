@@ -8,7 +8,12 @@
   --accent-color: #4A90E2;
   --border-color: #EEEEEE;
   --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --section-padding: 100px 5%;
+
+  /* Responsive spacing */
+  --section-padding: clamp(60px, 10vh, 140px) 5%;
+  --container-width: 1200px;
+
+  /* Smooth transitions */
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -27,7 +32,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -57,8 +65,8 @@ button {
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: clamp(2rem, 8vh, 4rem);
   text-align: center;
 }
 

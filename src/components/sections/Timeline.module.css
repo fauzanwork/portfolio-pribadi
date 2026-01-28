@@ -110,7 +110,7 @@
     border: 4px solid #FFF;
     border-radius: 50%;
     z-index: 10;
-    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .left .dot {
