@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fauzan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="index.html">Fauzan Rizky</a>
+      </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="index.html">Fauzan Rizky</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Abouts</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <video autoplay muted loop id="background-video">
+            <source src="./assets/tes_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Fauzan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Fauzan Rizky</h1>
+        <p class="section__text__p2">I'm Into <span id="changing-interest" class="typing"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/mfauzan-rizky/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/fauzanrrizky')"
+          />
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-picsss.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Data Analytic <br />Projects & Certifications</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Information Systems,<br />Bachelors Degree (ongoing)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                A third-year Information Systems student at the University of Indonesia. Have undertaken various projects and coursework that have provided me with a solid foundation in data analysis techniques, database management, and programming languages such as Python, Java, and SQL. I also involved with voluntary organizational activities which equipped me with strong communication and public speaking skills.
+                <br><br>
+                My passion for continuous learning and self-improvement drives me to stay updated with the latest developments in the field of data analytics through online courses and individual projects. I am eager to explore new opportunities that will allow me to further enhance my skills and contribute effectively to the field. Please feel free to reach out to me via LinkedIn message or email (mfauzan.rizky@gmail.com) for any further discussion or inquiries
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+        <br>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Supervised Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unsupervised Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NLP</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CNN</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database & Visualization</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Airflow</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Project Management</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Waterfall</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scrum</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Asana</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br><br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+
+          <!-- Project 1 -->
+          <div class="details-container color-container" category="data-analytics data-science">
+            <div class="article-container">
+              <img
+                src="./assets/aic.PNG"
+                alt="Project 1"
+                class="project-img"
+                onclick="openModal(this)"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Learntelligence: AI Generated Course App</h2>
+            <div class="tools-container">
+              <button class="btn-tool-python">Python</button>
+              <button class="btn-tool-cloud">Cloud Computing</button>
+              <button class="btn-tool-figma">Figma</button>
+            </div>
+            <p>Me and my team built AI Generated Course App for COMPFEST-16 AI Innovation Challenge. My role in this project is to fine-tune LLM Model (Phi-3 with Unsloth), and develop backend logic that are relevant to the Model (Create chapters, materials, quiz)</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.youtube.com/watch?v=QAf1kWQqmCs&t=1s')"
+              >
+                Demo
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://public.tableau.com/app/profile/fauzan.rizky/viz/LQ45_17170717162090/Story1')"
+              >
+                App Terminated
+              </button> -->
+            </div>
+          </div>
+
+
+          <!-- Project 9 -->
+          <div class="details-container color-container" category="others data-science">
+            <div class="article-container">
+              <img
+                src="./assets/project-9.PNG"
+                alt="Project 3"
+                class="project-img"
+                onclick="openModal(this)"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">FitFirst</h2>
+            <div class="tools-container">
+              <button class="btn-tool-python">Python</button>
+              <button class="btn-tool-cloud">Cloud Computing</button>
+            </div>
+            <p> A personal diet assistant mobile application with workout plan, diet plan, calories analysis, and tracker for workout and diet goals. My role in this project is to build 
+              a workout recommender system using cosine similarity, and image classification to identify food nutrients from image.
+            </p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.youtube.com/watch?v=gU8B55GGGlE')"
+              >
+                Demo
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://drive.google.com/file/d/1md7I4lhvoBe-fSnTID_2edk1F7Pq0eg8/view?usp=drive_link')"
+              >
+                Download (Android)
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Project 8 -->
+          <div class="details-container color-container" category="others">
+            <div class="article-container">
+              <img
+                src="./assets/project-8.PNG"
+                alt="Project 3"
+                class="project-img"
+                onclick="openModal(this)"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Social Media Sentiment Analysis</h2>
+            <div class="tools-container">
+              <button class="btn-tool-python">Python</button>
+              <button class="btn-tool-sql">SQL</button>
+              <button class="btn-tool-etl">ETL</button>
+              <button class="btn-tool-cloud">Cloud Computing</button>
+              <button class="btn-tool-airflow">Airflow</button>
+            </div>
+            <p>I collect Twitter data (𝕏) using web scraping via Selenium. Next, I reformat the data, translate tweets, and use a RoBERTa model for sentiment analysis.
+               Once the data is cleaned and structured, it's uploaded to BigQuery. Finally, I showcase and deploy various visualizations in Streamlit.
+            </p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://youtu.be/BE-bWLvPV7A')" 
+              >
+                Video Demo
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://drive.google.com/file/d/1wcmvY8ZCDHPXvst_ukXuB347Pq5v8B6I/view?usp=drive_link')" 
+              >
+                PDF
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="window.location.href='projects.html'"
+        >
+          More Projects
+        </button>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <br><br><br><br><br><br>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mfauzan.rizky@gmail.com">mfauzan.rizky@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mfauzan-rizky/">Fauzan Rizky</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Fauzan Rizky. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

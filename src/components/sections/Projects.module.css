@@ -1,0 +1,120 @@
+.projects {
+    padding: var(--section-padding);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+    height: 240px;
+    background-color: #EEE;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #777;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.info {
+    padding: 30px;
+}
+
+.category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    background-color: var(--primary-bg);
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    opacity: 0.5;
+    transition: var(--transition-smooth);
+}
+
+.card:hover .links {
+    opacity: 1;
+}
+
+.links a {
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+.links a:hover {
+    color: var(--text-main);
+    transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
