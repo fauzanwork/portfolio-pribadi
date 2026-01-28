@@ -13,7 +13,7 @@ const Projects = ({ projects }) => {
                     viewport={{ once: true }}
                     className="section-title"
                 >
-                    Selected Works
+                    Past Projects
                 </motion.h2>
 
                 <div className={styles.grid}>
@@ -38,7 +38,18 @@ const Projects = ({ projects }) => {
                                     transition={{ duration: 0.4 }}
                                     className={styles.imagePlaceholder}
                                 >
-                                    <span>{project.title}</span>
+                                    {project.image ? (
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className={styles.projectImage}
+                                            onError={(e) => {
+                                                e.target.style.display = 'none';
+                                                e.target.nextSibling.style.display = 'block';
+                                            }}
+                                        />
+                                    ) : null}
+                                    <span style={{ display: project.image ? 'none' : 'block' }}>{project.title}</span>
                                 </motion.div>
                             </div>
 

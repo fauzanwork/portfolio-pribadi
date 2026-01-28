@@ -3,12 +3,13 @@
     "name": "Fauzan Rizky",
     "role": "Data Engineer • CS Master's Student",
     "headline": [
-      "Engineering Data Systems.",
+      "Data Engineering",
       "Solving Complex Problems.",
-      "Scaling Innovation."
+      "Building Scalable Data Ecosystems.",
+      "Optimizing through Automation."
     ],
-    "about": "I am a Data Engineer with a Bachelor's in Information Systems and a deep passion for building scalable data architectures. Currently bridging the gap between engineering and advanced research as I embark on my Master's in Computer Science at the University of Sydney. Beyond 9-to-5, I help businesses automate their operations through custom-built engines.",
-    "location": "Sydney, Australia (Incoming) / Indonesia",
+    "about": "I am a Data Engineer and Computer Science Master's student at the University of Sydney, specializing in data architectures and AI-driven automation. I focus on turning complex data challenges into scalable, production-ready ecosystems. I am currently open to freelance projects and collaboration opportunities. If you have a system to scale or a process to automate, let's connect.",
+    "location": "Sydney, Australia",
     "image": "/assets/profile/me.jpg",
     "email": "mfauzan.rizky@gmail.com",
     "socials": {
@@ -19,90 +20,118 @@
   "timeline": [
     {
       "id": 1,
-      "year": "2021",
-      "title": "Bachelor of Information Systems",
-      "organization": "University of Indonesia",
-      "description": "Graduated with a strong foundation in database management, programming, and systems analysis.",
-      "type": "education"
+      "year": "2024",
+      "title": "Advanced Analytics",
+      "organization": "PT Telekomunikasi Seluler",
+      "description": "Optimized the MyTelkomsel recommendation system by re-engineering inefficient codebase and automating the production pipeline, achieving a 99.9% reduction in execution time (6m to 197ms)",
+      "type": "internship"
     },
     {
       "id": 2,
-      "year": "2024",
-      "title": "Data Engineer",
-      "organization": "Professional Role",
-      "description": "Led data pipeline optimization and architecture design for large-scale data processing.",
-      "type": "work"
+      "year": "2024-2025",
+      "title": "Data Warehouse Engineer",
+      "organization": "Qoala",
+      "description": "Modernized legacy data infrastructure by migrating unstructured MySQL and API pipelines into a structured 6-layer warehouse using dbt and Airbyte. Implemented SCD Type 2 for historical tracking and leveraged dbt documentation as a metadata layer for AI products, while productionizing automated Airflow pipelines to ensure reliable data delivery via SFTP, SQS, and Email for global partners.",
+      "type": "internship"
     },
     {
       "id": 3,
-      "year": "2024",
-      "title": "Freelance Client: Business Automation",
-      "organization": "Confidential Business",
-      "description": "Developed an automated reconciliation engine to streamline financial data processing.",
-      "type": "freelance"
+      "year": "2025",
+      "title": "Bachelor of Information Systems",
+      "organization": "University of Indonesia",
+      "description": "Graduated with a strong foundation in Database Management, Data Science & AI, and systems analysis.",
+      "type": "education"
     },
     {
       "id": 4,
-      "year": "2025",
+      "year": "2025-2026",
+      "title": "Data Engineer",
+      "organization": "Qoala",
+      "description": "Initiate data platform, including an AI-powered self-service analytics (text2sql2insight) & auto-reconciliation engine that reduced ad-hoc requests by 40%. Built a serverless Data Lake that focused on low-cost data-infrastructure. Also engineered resilient scraping systems to bypass Cloudflare bot detection and optimized Airflow infrastructure to ensure 24/7 production stability.",
+      "type": "full-time work"
+    },
+    {
+      "id": 5,
+      "year": "2025-2026",
+      "title": "Freelance: Software Engineer",
+      "organization": "Alterra",
+      "description": "Built end-to-end automated reconciliation engine, managing everything from core application logic to cloud infrastructure (AWS) via Terraform. Architected a system to automate financial data ingestion across 27+ diverse biller websites. Navigating complex challenges like automated captcha resolution, transforming manual processing into a fully autonomous, production-ready data ecosystem",
+      "type": "freelance"
+    },
+    {
+      "id": 6,
+      "year": "2026-2028",
       "title": "Master of Computer Science",
       "organization": "University of Sydney",
-      "description": "Advancing research and technical expertise in the field of Computer Science.",
+      "description": "Advancing expertise in the field of Computer Science. Specializing in Data Science & AI and Cybersecurity",
       "type": "education"
     }
   ],
   "projects": [
     {
-      "id": "reconciliation-engine",
-      "title": "Automated Reconciliation Engine",
-      "category": "Data Engineering / Automation",
-      "description": "A high-performance engine built to automate the reconciliation of complex business transactions, reducing manual effort by 90%.",
+      "id": "learntelligence",
+      "title": "Learntelligence: AI Generated Course App",
+      "category": "ML / AI",
+      "description": "Me and my team built AI Generated Course App for COMPFEST-16 AI Innovation Challenge. My role in this project is to fine-tune LLM Model (Phi-3 with Unsloth), and develop backend logic that are relevant to the Model (Create chapters, materials, quiz)",
       "tags": [
         "Python",
-        "SQL",
-        "BigQuery",
-        "API Integration"
+        "Cloud Computing",
+        "Figma"
       ],
-      "image": "/assets/projects/reconciliation.jpg",
+      "image": "/assets/projects/aic.PNG",
       "links": {
-        "github": "",
-        "demo": "",
-        "docs": ""
+        "demo": "https://www.youtube.com/watch?v=QAf1kWQqmCs&t=1s"
       }
     },
     {
-      "id": "real-time-pipeline",
-      "title": "Real-time Streaming Pipeline",
-      "category": "Data Engineering",
-      "description": "Scalable streaming architecture using Kafka and Spark for low-latency data processing and real-time dashboarding.",
+      "id": "fitfirst",
+      "title": "FitFirst",
+      "category": "Mobile App / ML",
+      "description": "A personal diet assistant mobile application with workout plan, diet plan, calories analysis, and tracker for workout and diet goals. My role in this project is to build a workout recommender system using cosine similarity, and image classification to identify food nutrients from image.",
       "tags": [
-        "Kafka",
-        "Spark",
         "Python",
-        "Cloud"
+        "Cloud Computing"
       ],
-      "image": "/assets/projects/streaming.jpg",
+      "image": "/assets/projects/project-9.PNG",
       "links": {
-        "github": "https://github.com/fauzanwork",
-        "demo": "",
-        "docs": ""
+        "demo": "https://www.youtube.com/watch?v=gU8B55GGGlE",
+        "download": "https://drive.google.com/file/d/1md7I4lhvoBe-fSnTID_2edk1F7Pq0eg8/view?usp=drive_link"
       }
     },
     {
-      "id": "data-warehouse-optimization",
-      "title": "DW Design & Optimization",
-      "category": "Architecture",
-      "description": "End-to-end data warehouse transformation, implementing star schema and optimizing query performance by 40%.",
+      "id": "sentiment-analysis",
+      "title": "Social Media Sentiment Analysis",
+      "category": "Data Engineering / Data Science",
+      "description": "I collect Twitter data (𝕏) using web scraping via Selenium. Next, I reformat the data, translate tweets, and use a RoBERTa model for sentiment analysis. Once the data is cleaned and structured, it's uploaded to BigQuery. Finally, I showcase and deploy various visualizations in Streamlit.",
       "tags": [
-        "BigQuery",
-        "dbt",
+        "Python",
         "SQL",
-        "Looker"
+        "ETL",
+        "Cloud Computing",
+        "Airflow"
       ],
-      "image": "/assets/projects/dw.jpg",
+      "image": "/assets/projects/project-8.PNG",
       "links": {
-        "github": "",
-        "demo": "",
-        "docs": "https://fauzanrizky.com"
+        "demo": "https://youtu.be/BE-bWLvPV7A",
+        "pdf": "https://drive.google.com/file/d/1wcmvY8ZCDHPXvst_ukXuB347Pq5v8B6I/view?usp=drive_link"
+      }
+    },
+    {
+      "id": "idx-analytics",
+      "title": "Indonesia Stock Exchange Analytics",
+      "category": "Data Engineering / Analytics",
+      "description": "I analyzed LQ45 index companies by gathering financial reports and stock price data via the Yahoo Finance API. After performing ETL processes with Mage AI on a Google VM, I used BigQuery SQL to explore the data and identify trends. Finally, I created a Tableau dashboard to visualize the financial health and performance trends of LQ45 companies.",
+      "tags": [
+        "Python",
+        "Tableau",
+        "SQL",
+        "ETL",
+        "Cloud Computing"
+      ],
+      "image": "/assets/projects/project-7.PNG",
+      "links": {
+        "demo": "https://drive.google.com/file/d/1NaGGkc4VQ6KvoTuGsy9EKQe_Q35w3YOF/view?usp=sharing",
+        "tableau": "https://public.tableau.com/app/profile/fauzan.rizky/viz/LQ45_17170717162090/Story1"
       }
     }
   ],
@@ -110,31 +139,40 @@
     {
       "name": "Data Engineering",
       "items": [
-        "ETL/ELT",
-        "BigQuery",
-        "Airflow",
-        "SQL",
         "Python",
-        "dbt"
-      ]
-    },
-    {
-      "name": "Development",
-      "items": [
-        "React",
-        "JavaScript",
-        "Rest APIs",
-        "Java",
-        "Node.js"
-      ]
-    },
-    {
-      "name": "Research & Tools",
-      "items": [
-        "Computer Science Fundamentals",
-        "Git",
+        "SQL",
+        "Airflow",
+        "dbt",
+        "DuckDB",
+        "PySpark",
+        "AWS",
         "Docker",
-        "AWS/GCP"
+        "CI/CD",
+        "Shell Scripting"
+      ]
+    },
+    {
+      "name": "AI & Machine Learning",
+      "items": [
+        "LLMs",
+        "RAG",
+        "NLP",
+        "Deep Learning",
+        "TensorFlow",
+        "FastAPI",
+        "ChromaDB"
+      ]
+    },
+    {
+      "name": "Analytics & Automation",
+      "items": [
+        "BigQuery",
+        "Tableau",
+        "Web Scraping",
+        "n8n",
+        "Playwright",
+        "Selenium",
+        "TypeScript"
       ]
     }
   ]
