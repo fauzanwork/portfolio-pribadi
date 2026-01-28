@@ -22,9 +22,11 @@ const Hero = ({ profile }) => {
                     >
                         Hi, I’m {profile.name.split(' ')[0]}
                     </motion.p>
-                    <h1 className={styles.headline}>
-                        <Typewriter phrases={profile.headline} />
-                    </h1>
+                    <motion.div layout transition={{ duration: 0.4 }} className={styles.headlineWrapper}>
+                        <h1 className={styles.headline}>
+                            <Typewriter phrases={profile.headline} />
+                        </h1>
+                    </motion.div>
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

@@ -30,16 +30,19 @@
     letter-spacing: 0.1em;
 }
 
+.headlineWrapper {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
 .headline {
     font-size: clamp(2.5rem, 8vw, 5rem);
     line-height: 1.1;
     color: var(--text-main);
-    margin-bottom: 2rem;
-    min-height: 1.2em;
-    /* Fluid height based on font size */
-    display: flex;
-    align-items: center;
+    margin-bottom: 0;
+    text-wrap: balance;
 }
+
 
 
 .subtext {
@@ -179,7 +182,8 @@
         justify-content: center;
     }
 
-    .headline {
+    .headline,
+    .headlineSpacer {
         font-size: 3.5rem;
     }
 
