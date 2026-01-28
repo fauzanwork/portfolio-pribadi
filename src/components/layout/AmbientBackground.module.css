@@ -1,0 +1,58 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background-color: var(--primary-bg);
+}
+
+/* Premium Grain Texture Overlay */
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    pointer-events: none;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    filter: contrast(150%) brightness(100%);
+}
+
+.blob1 {
+    position: absolute;
+    top: -5%;
+    right: -2%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.12) 0%, rgba(74, 144, 226, 0) 70%);
+    filter: blur(60px);
+    border-radius: 50%;
+}
+
+.blob2 {
+    position: absolute;
+    bottom: -5%;
+    left: -2%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(46, 204, 113, 0.1) 0%, rgba(46, 204, 113, 0) 70%);
+    filter: blur(60px);
+    border-radius: 50%;
+}
+
+.blob3 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(155, 89, 182, 0.08) 0%, rgba(155, 89, 182, 0) 70%);
+    filter: blur(50px);
+    border-radius: 50%;
+}

@@ -1,0 +1,141 @@
+{
+  "profile": {
+    "name": "Fauzan Rizky",
+    "role": "Data Engineer • CS Master's Student",
+    "headline": [
+      "Engineering Data Systems.",
+      "Solving Complex Problems.",
+      "Scaling Innovation."
+    ],
+    "about": "I am a Data Engineer with a Bachelor's in Information Systems and a deep passion for building scalable data architectures. Currently bridging the gap between engineering and advanced research as I embark on my Master's in Computer Science at the University of Sydney. Beyond 9-to-5, I help businesses automate their operations through custom-built engines.",
+    "location": "Sydney, Australia (Incoming) / Indonesia",
+    "image": "/assets/profile/me.jpg",
+    "email": "mfauzan.rizky@gmail.com",
+    "socials": {
+      "github": "https://github.com/fauzanwork",
+      "linkedin": "https://www.linkedin.com/in/mfauzan-rizky/"
+    }
+  },
+  "timeline": [
+    {
+      "id": 1,
+      "year": "2021",
+      "title": "Bachelor of Information Systems",
+      "organization": "University of Indonesia",
+      "description": "Graduated with a strong foundation in database management, programming, and systems analysis.",
+      "type": "education"
+    },
+    {
+      "id": 2,
+      "year": "2024",
+      "title": "Data Engineer",
+      "organization": "Professional Role",
+      "description": "Led data pipeline optimization and architecture design for large-scale data processing.",
+      "type": "work"
+    },
+    {
+      "id": 3,
+      "year": "2024",
+      "title": "Freelance Client: Business Automation",
+      "organization": "Confidential Business",
+      "description": "Developed an automated reconciliation engine to streamline financial data processing.",
+      "type": "freelance"
+    },
+    {
+      "id": 4,
+      "year": "2025",
+      "title": "Master of Computer Science",
+      "organization": "University of Sydney",
+      "description": "Advancing research and technical expertise in the field of Computer Science.",
+      "type": "education"
+    }
+  ],
+  "projects": [
+    {
+      "id": "reconciliation-engine",
+      "title": "Automated Reconciliation Engine",
+      "category": "Data Engineering / Automation",
+      "description": "A high-performance engine built to automate the reconciliation of complex business transactions, reducing manual effort by 90%.",
+      "tags": [
+        "Python",
+        "SQL",
+        "BigQuery",
+        "API Integration"
+      ],
+      "image": "/assets/projects/reconciliation.jpg",
+      "links": {
+        "github": "",
+        "demo": "",
+        "docs": ""
+      }
+    },
+    {
+      "id": "real-time-pipeline",
+      "title": "Real-time Streaming Pipeline",
+      "category": "Data Engineering",
+      "description": "Scalable streaming architecture using Kafka and Spark for low-latency data processing and real-time dashboarding.",
+      "tags": [
+        "Kafka",
+        "Spark",
+        "Python",
+        "Cloud"
+      ],
+      "image": "/assets/projects/streaming.jpg",
+      "links": {
+        "github": "https://github.com/fauzanwork",
+        "demo": "",
+        "docs": ""
+      }
+    },
+    {
+      "id": "data-warehouse-optimization",
+      "title": "DW Design & Optimization",
+      "category": "Architecture",
+      "description": "End-to-end data warehouse transformation, implementing star schema and optimizing query performance by 40%.",
+      "tags": [
+        "BigQuery",
+        "dbt",
+        "SQL",
+        "Looker"
+      ],
+      "image": "/assets/projects/dw.jpg",
+      "links": {
+        "github": "",
+        "demo": "",
+        "docs": "https://fauzanrizky.com"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "Data Engineering",
+      "items": [
+        "ETL/ELT",
+        "BigQuery",
+        "Airflow",
+        "SQL",
+        "Python",
+        "dbt"
+      ]
+    },
+    {
+      "name": "Development",
+      "items": [
+        "React",
+        "JavaScript",
+        "Rest APIs",
+        "Java",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Research & Tools",
+      "items": [
+        "Computer Science Fundamentals",
+        "Git",
+        "Docker",
+        "AWS/GCP"
+      ]
+    }
+  ]
+}
